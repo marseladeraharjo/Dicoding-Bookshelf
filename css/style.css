@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: Roboto, sans-serif;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+.header {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #323232;
+  color: white;
+  box-shadow: 2px 0 5px #323232;
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.shadow {
+  box-shadow: 8px 5px 4px #323232;
+}
+
+.shadows {
+  box-shadow: 2px 2px 5px #323232;
+}
+
+.text-center {
+  text-align: center;
+  color: #323232;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid #323232;
+  border-radius: 10px;
+}
+
+.input-section > form > .input-bar {
+  margin: 8px 0;
+}
+
+.input-section > form > button {
+  background-color: #323232;
+  color: white;
+  border: 2px solid #323232;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input-section > form > button:hover {
+  background-color: white;
+  color: #323232;
+  border: 2px solid #323232;
+}
+
+.input-section > form > .input-bar > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #323232;
+}
+
+.input-section > form > .input-bar > label {
+  color: #323232;
+  font-weight: 400;
+}
+
+.book-shelf {
+  margin: 16px 0 0 0;
+  border: 1px solid #323232;
+  border-radius: 10px;
+  padding: 16px;
+  color: #323232;
+}
+
+.book-shelf h2 {
+  font-weight: 400;
+}
+
+.book-shelf > .book-list {
+  padding: 16px;
+}
+
+.item {
+  border: 1px solid #323232;
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.item > .inner h2 {
+  margin-bottom: unset;
+  font-weight: bold;
+}
+
+.item > .inner p {
+  margin-top: 5px;
+}
+
+.check-button {
+  width: 40px;
+  height: 40px;
+
+  background: url("../assets/check-fill.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.check-button:hover {
+  background: url("../assets/check-unfill.svg");
+  background-size: contain;
+}
+
+.trash-button {
+  width: 40px;
+  height: 40px;
+
+  background: url("../assets/delete-fill.svg");
+  background-size: contain;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.trash-button:hover {
+  background: url("../assets/delete-unfill.svg");
+  background-size: contain;
+}
+
+.undo-button {
+  width: 40px;
+  height: 40px;
+
+  background: url("../assets/undo.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.undo-button:hover {
+  background: url("../assets/undo.svg");
+  background-size: contain;
+}
+
+.check-button:focus,
+.trash-button {
+  outline: none;
+}
